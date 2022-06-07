@@ -6,11 +6,7 @@ class ListGroup extends React.Component {
 
         return (
             <ul className='list-group'>
-                {React.Children.map(children, (child, i) => {
-                    return (
-                        <li className='list-group-item'>{child}</li>
-                    )
-                })}
+                {React.Children.map(children, child => <li className='list-group-item'>{child}</li>)}
             </ul>
         )
     }
